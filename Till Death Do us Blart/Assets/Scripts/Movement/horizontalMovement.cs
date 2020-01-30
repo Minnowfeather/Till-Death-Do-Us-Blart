@@ -19,7 +19,7 @@ public class horizontalMovement : MonoBehaviour {
 	void Update () {
 		
 		if (Input.GetKey ("a")) {
-			x -= 50;
+			x -= 50f;
 		}
 		if (Input.GetKey ("d")) {
 			x += 50f;

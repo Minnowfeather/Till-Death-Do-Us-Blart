@@ -249,7 +249,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 180437729}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 428a8641202f3a7499277109b720989e, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -377,6 +377,16 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 61536389843259850, guid: 963bf8144fec89948b197a0569dc3be1,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -11.40319
+      objectReference: {fileID: 0}
+    - target: {fileID: 61536389843259850, guid: 963bf8144fec89948b197a0569dc3be1,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2.4323864
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 963bf8144fec89948b197a0569dc3be1, type: 3}
 --- !u!1 &499724025
@@ -421,8 +431,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &499724027
-BoxCollider2D:
+--- !u!60 &499724027
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -434,7 +444,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.75890964, y: -0.5980654}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -444,9 +454,18 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.7817222, y: 0.8132739}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.90690005, y: -0.34145606}
+      - {x: 1.0492172, y: -0.34550917}
+      - {x: 1.0579898, y: -0.21956217}
+      - {x: 0.49397218, y: -0.21573508}
+      - {x: 0.49956048, y: -0.34194255}
+      - {x: 0.599756, y: -0.35745692}
+      - {x: 0.37780416, y: -0.5034145}
+      - {x: 0.552138, y: -0.9790608}
+      - {x: 1.009746, y: -0.9790607}
+      - {x: 1.1651856, y: -0.522308}
 --- !u!212 &499724028
 SpriteRenderer:
   m_ObjectHideFlags: 0
